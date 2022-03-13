@@ -21,19 +21,19 @@ class _HomePageState extends State<HomePage> {
           SliverAppBar(
             floating: false,
             pinned: true,
-            shape: RoundedRectangleBorder(
+            shape: const RoundedRectangleBorder(
               borderRadius: BorderRadius.vertical(
                 bottom: Radius.circular(30),
               ),
             ),
             bottom: PreferredSize(
-              preferredSize: Size.fromHeight(36.0),
+              preferredSize: const Size.fromHeight(36.0),
               child: Container(),
             ),
             expandedHeight: 180,
             stretch: true,
             flexibleSpace: FlexibleSpaceBar(
-              stretchModes: <StretchMode>[
+              stretchModes: const <StretchMode>[
                 StretchMode.zoomBackground,
                 StretchMode.blurBackground,
                 StretchMode.fadeTitle,
@@ -43,19 +43,19 @@ class _HomePageState extends State<HomePage> {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   CircularPercentIndicator(
-                    progressColor: Color(0xFFE57373),
+                    progressColor: const Color(0xFFE57373),
                     backgroundColor: Colors.orange,
                     lineWidth: 3,
                     percent: 0.75,
                     radius: 72,
-                    center: CircleAvatar(
+                    center: const CircleAvatar(
                         radius: 30,
                         backgroundImage:
                             AssetImage('assets/images/image1.jpg')),
                   ),
                   SingleChildScrollView(
                     child: Column(
-                      children: [
+                      children: const [
                         SizedBox(
                           width: 100,
                         ),
@@ -78,11 +78,11 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
             elevation: 12,
-            leading: Icon(
+            leading: const Icon(
               Icons.menu,
               color: Colors.black,
             ),
-            actions: [
+            actions: const [
               Icon(
                 Icons.search,
                 color: Colors.black,
@@ -97,9 +97,9 @@ class _HomePageState extends State<HomePage> {
               padding: const EdgeInsets.all(8.0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
+                children: const [
                   Padding(
-                    padding: const EdgeInsets.all(8.0),
+                    padding: EdgeInsets.all(8.0),
                     child: Text(
                       "My tasks",
                       style: TextStyle(fontSize: 24, fontWeight: FontWeight.w500),
@@ -183,7 +183,7 @@ class _HomePageState extends State<HomePage> {
                           color: Colors.white,
                         ),
                       ),
-                      SizedBox(width: 12,),
+                      const SizedBox(width: 12,),
                       Column(
                         crossAxisAlignment:  CrossAxisAlignment.start ,
 
@@ -231,7 +231,7 @@ class _HomePageState extends State<HomePage> {
                           color: Colors.white,
                         ),
                       ),
-                      SizedBox(width: 12,),
+                      const SizedBox(width: 12,),
                       Column(
                         crossAxisAlignment:  CrossAxisAlignment.start ,
 
@@ -300,7 +300,7 @@ class _HomePageState extends State<HomePage> {
                             radius: 80,
                           percent: 0.25,
                             progressColor: Colors.white,
-                            center: Text('25%',style: TextStyle(color: Colors.white,fontSize: 20),),
+                            center: const Text('25%',style: TextStyle(color: Colors.white,fontSize: 20),),
 
 
                           ),
@@ -351,7 +351,7 @@ class _HomePageState extends State<HomePage> {
                             radius: 80,
                             percent: 0.75,
                             progressColor: Colors.white,
-                            center: Text('75%',style: TextStyle(color: Colors.white,fontSize: 20),),
+                            center: const Text('75%',style: TextStyle(color: Colors.white,fontSize: 20),),
 
 
                           ),
@@ -410,7 +410,7 @@ class _HomePageState extends State<HomePage> {
                             radius: 80,
                             percent: 0.60,
                             progressColor: Colors.white,
-                            center: Text('60%',style: TextStyle(color: Colors.white,fontSize: 20),),
+                            center: const Text('60%',style: TextStyle(color: Colors.white,fontSize: 20),),
 
 
                           ),
@@ -461,7 +461,7 @@ class _HomePageState extends State<HomePage> {
                             radius: 80,
                             percent: 0.52,
                             progressColor: Colors.white,
-                            center: Text('52%',style: TextStyle(color: Colors.white,fontSize: 20),),
+                            center: const Text('52%',style: TextStyle(color: Colors.white,fontSize: 20),),
 
 
                           ),
